@@ -115,9 +115,9 @@
      */
     simplyCountdown = function (elt, args) {
         var parameters = extend({
-                year: 2015,
+                year: 2018,
                 month: 6,
-                day: 28,
+                day: 3,
                 hours: 0,
                 minutes: 0,
                 seconds: 0,
@@ -152,6 +152,11 @@
             minutes,
             seconds,
             cd = document.querySelectorAll(elt);
+
+        // Marriage date is 3, June, 2018
+        parameters.day = 3;
+        parameters.year = 2018;
+        parameters.month = 6;
 
         targetTmpDate = new Date(
             parameters.year,
